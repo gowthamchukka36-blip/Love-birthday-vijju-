@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Vijju 🎀🌙</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Password Lock Screen -->
+  <div id="passwordScreen" class="password-screen">
+    <div class="password-box">
+      <h2>Enter Password</h2>
+      <input type="password" id="passwordInput" placeholder="DD-MM-YYYY">
+      <button id="passwordBtn">Unlock</button>
+      <p id="passwordError"></p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="mainContent" class="hidden">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Happy Birthday Vijjuluuuuu 🎀 🤍</h1>
+        <p>You are my moon in every dark night 🙂🌙✨</p>
+      </div>
+      <div class="hero-moon">
+        <img src="assets/images/moon.png" alt="Moon" class="moon-img">
+      </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+      <h2>Vijju Birthday Countdown</h2>
+      <div id="countdown" class="countdown"></div>
+      <p>Special Day 🫶🏻 (17-08-2026)</p>
+    </section>
+
+    <!-- Reasons I Love You Section -->
+    <section class="love-cards">
+      <h2>Reasons I Love You</h2>
+      <button onclick="showLoveCard(0)">Card 1</button>
+      <button onclick="showLoveCard(1)">Card 2</button>
+      <button onclick="showLoveCard(2)">Card 3</button>
+    </section>
+
+    <!-- XOX Game -->
+    <section class="xox-game">
+      <h2>XOX Game 🌕🩷🌕</h2>
+      <button onclick="xoxMove('Moon')">Moon</button>
+      <button onclick="xoxMove('Titan')">Titan</button>
+    </section>
+
+    <!-- Hidden Promise -->
+    <section class="hidden-promise">
+      <h2>Click the Heart ❤️</h2>
+      <div id="heart" onclick="clickHeart()">💖</div>
+    </section>
+
+    <!-- Letter Section -->
+    <section class="letter-section">
+      <div class="letter-paper">
+        <h2>Dearest Vijju,</h2>
+        <p>Nuvey cheppav ga the moon has no light of its own ani..adhi sun midha depend ayi untundhi ani cheppav...
+        Ala aytey you are my sun and every happy moment I have is just a reflection of your beautiful soul.</p>
+        <p>Happy birthday my one...ee day motham happy ga navvuthu undu... Adhey nv Naku echey chala manchi party 🙃🤍.ok na... Be like a lady tiger 😁</p>
+        <p>Onces again Happy Birthday, my Vijju ❤️<br>Always yours, Close one ❤️</p>
+      </div>
+    </section>
+
+    <!-- Cake Section -->
+    <section class="cake-section">
+      <h2>Make a Wish, Vijju 🎂</h2>
+      <div id="cake">🎂</div>
+      <button onclick="cakeCut(1)">Cut 1</button>
+      <button onclick="cakeCut(2)">Cut 2</button>
+      <button onclick="cakeCut(3)">Cut 3</button>
+      <button onclick="cakeCut(4)">Cut 4</button>
+      <button onclick="cakeCut(5)">Cut 5</button>
+    </section>
+
+    <!-- Gift Section -->
+    <section class="gift-section">
+      <h2>Click Your Gift 🎁</h2>
+      <div id="gift" onclick="openGift()">🎁</div>
+    </section>
+
+    <!-- Jar of Endless Wishes -->
+    <section class="jar-wishes">
+      <h2>Jar of Endless Wishes ✨</h2>
+      <div id="jar" onclick="clickJar()">💌</div>
+    </section>
+
+    <!-- Name a Star Section -->
+    <section class="star-section">
+      <h2>if moon holiday tesukuntey..?</h2>
+      <div id="star-sky" onclick="addStar()">🌌</div>
+    </section>
+
+    <!-- Final Celebration -->
+    <section class="final-celebration">
+      <h2 id="finalMessage">🎉🌙 Happy Birthday Vijju! 🎀</h2>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+  </html>
